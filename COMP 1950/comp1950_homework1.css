@@ -1,0 +1,133 @@
+/* COMP1950 Homework #1 Stylesheet */
+
+/* Brian Liao */
+
+/* Page Background Color */
+body{
+	background-color: #E8F2F5;
+}
+
+/*Page Title */
+h1 {
+	position: relative;
+	font: bold 44pt verdana;
+	border: 2px solid #8FDAC4;
+	padding: 2%;
+	margin: 0;
+	background-color: #D9E5E9;
+	color: #4DA9C5;
+	text-align: center;
+}
+
+/* Biographical Info. Title */
+h2 {
+	position: relative;
+	font: bold 34pt verdana;
+	border: 2px solid #8FDAC4;
+	padding: 2%;
+	margin: 2%;
+	left: 21%;
+	width: 50%;
+	background-color: #D9E5E9;
+	color: #4DA9C5;
+	text-align: center;
+}
+
+/* Horizontal Navigation Pane */
+ul {
+    position:relative;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4794ED;
+}
+
+ul li {
+    float: left;
+	font-size: 26px;
+	
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 26px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #003366;
+}
+
+
+/* Homepage Introductory paragraph */
+#bio{
+	padding: 2%;
+	padding-bottom:8%;
+	margin: 2%;
+	border: 5px solid #D2C29E;
+	font: normal 26pt verdana;
+	text-align: left;
+	background-color: #F7EEDA;
+	color: #B47F03;
+}
+
+/* Home page second paragraph */
+.normal_p{
+	padding: 2%;
+	margin: 2%;
+	border: 5px solid #D2C29E;
+	font: normal 26pt verdana;
+	text-align: left;
+	background-color: #F7EEDA;
+	color: #B47F03;
+}
+
+/* List of Tools */
+.list_p{
+	padding: 2%;
+	padding-left: 6%;
+	margin: 2%;
+	border: 5px solid #D2C29E;
+	font: normal 26pt verdana;
+	text-align: left;
+	background-color: #F7EEDA;
+	color: #B47F03;
+}
+
+
+/* Portrait of Brian */
+img{
+	padding-left: 2%;
+	float: right;
+	width: 350px;
+	height: 380px;
+}
+
+figure{
+	float:left;
+}
+
+
+/*psuedoclasses*/
+/* unvisited link */
+ol li a:link {
+	color: #2E2EFE;
+}
+
+/* visited link */
+ol li a:visited {
+    color: #6A0888;
+}
+
+/* mouse over link */
+ol li a:hover {
+    color: #086A87;
+}
+
+/* while clicking link */
+ol li a:active {
+    color: #585858;
+}

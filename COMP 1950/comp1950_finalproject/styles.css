@@ -1,0 +1,195 @@
+/*CSS reset*/
+/*Suyash Raj Bhandari */
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/*footer and header */
+
+.header-1 {
+  background-color: black;
+  color: white;
+}
+
+header h1 {
+  text-shadow: 1px 1px white;
+}
+
+.footer-1 {
+  background: black;
+  color: white;
+  padding: 20px;
+  clear: both;
+}
+
+/* sections */
+
+.section1 {
+  background-color: #E8DAEF;
+  padding: 20px 80px 80px 20px;
+}
+
+.section1 h2{
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+.section2 {
+  background-color: #CD6155;
+  padding: 20px 100px 100px 20px;
+}
+
+.section2 h2{
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+.section2 {
+  color: black;
+}
+
+
+/* nav and header */
+
+header {
+  display: flex;
+}
+
+h1{
+  flex-basis: 70%;
+  margin-left: 20px;
+}
+
+nav {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+/* main */
+
+main h2 {
+  text-align: center;
+}
+
+main h3 {
+  text-align: center;
+}
+
+main p {
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.image-gallery {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  width: 300px;
+  height: 275px;
+}
+
+
+
+/* gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sitemapimage {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sitemap {
+  height: 800px;
+  width: 900px;
+}
+
+/* columns */
+
+.columns {
+  overflow: auto;
+  padding-bottom: 30px;
+}
+
+.column1, .column2 {
+  float: left;
+  width: 50%;
+}
+
+/*Media Queries */
+
+@media screen and (min-width: 800px) and (max-width: 1003px) {
+  header h1 {
+    flex-basis: 50%;
+  }
+  header nav{
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px){
+  header h1 {
+    flex-basis: 50%;
+  }
+  header nav{
+    flex-basis: 50%;
+  }
+  .column1, .column2{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  header h1 {
+    flex-basis: 40%;
+    font-size: 20px;
+  }
+  header nav{
+    flex-basis: 60%;
+  }
+  .column1, .column2{
+    width: 100%;
+  }
+  .img1, .img2, .img3, .img4, .img5, .img6 {
+    flex: 0 1 100%;
+  }
+}
+
+@media print {
+  header h1, header nav {
+    display: none;
+  }
+  .column1, .column2{
+    width: 100%;
+  }
+  .button {
+    display: none;
+  }
+}

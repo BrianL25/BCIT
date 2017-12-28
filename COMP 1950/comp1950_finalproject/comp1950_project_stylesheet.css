@@ -1,0 +1,386 @@
+/* COMP 1950 Project Stylesheet */
+/* Suyash Raj Bhandari & Brian Liao */
+
+body {
+	background-color: #f2f2f2;
+	margin: 2%;
+}
+
+footer {
+	padding: 1%;
+	text-align: center;
+	font-size: 14pt;
+	background-color: lavender;
+	border: 2px solid lightsteelblue;
+}
+
+/* Project Introduction Page */
+
+#header_intro {
+	background-color: #3366ff;
+	color: white;
+	text-align: center;
+	padding: 1%;
+}
+
+.nav_items {
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+}
+
+#about {
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+}
+
+#comp1850, #comp1950 {
+	width: 45%;
+	height: auto;
+	padding: 3%;
+	border:2px solid black;
+}
+
+#comp1850 {
+	background-color: #ccefff;
+	border-color: #66b3ff;
+}
+
+#comp1950 {
+	background-color: #f3e6ff;
+	border-color: #cc99ff;
+}
+
+h4 {
+	text-align: center;
+	background-color: navajowhite;
+	border-radius: 15px;
+	border: 2px solid lightgrey;
+	width: auto;
+	padding: 2%;
+	display: block;
+	margin: 5% 20% 5% 20%;
+}
+
+#about li {
+	padding: 1%;
+}
+
+#comp1850 > h2 a:link{
+	text-decoration: none;
+	color: darkblue;
+}
+
+#comp1850 > h2 a:hover{
+	text-decoration: none;
+	color: gray;
+}
+
+#comp1850 > h4 a:link{
+	text-decoration: none;
+	color: darkblue;
+}
+
+#comp1850 > h4 a:hover{
+	text-decoration: none;
+	color: gray;
+}
+
+#comp1950 > h2 a:link{
+	text-decoration: none;
+	color: darkorchid;
+}
+
+#comp1950 > h2 a:hover{
+	text-decoration: none;
+	color: brown;
+}
+
+#comp1950 > h4 a:link{
+	text-decoration: none;
+	color: darkorchid;
+}
+
+#comp1950 > h4 a:hover{
+	text-decoration: none;
+	color: brown;
+}
+
+/* Project Course Page */
+
+#header_course {
+	background-color: lightcoral;
+	color: white;
+	text-align: center;
+	padding: 1%;
+	border: 2px solid firebrick;
+}
+
+#comp1950_course {
+	width: auto;
+	height: auto;
+	padding: 3%;
+	border:2px solid lightpink;
+	background-color: papayawhip;
+}
+
+#comp1950_course a:link{
+	text-decoration: none;
+}
+
+#comp1950_course a:hover{
+	text-decoration: none;
+	color: darksalmon;
+}
+
+#lecture1 a{
+	color: darkcyan;
+}
+
+#lecture2 a{
+	color: olivedrab;
+}
+
+#lecture3 a{
+	color: firebrick;
+}
+
+#lecture4 a{
+	color: sandybrown;
+}
+
+#lecture5 a{
+	color: deeppink;
+}
+
+#lecture6 a{
+	color: purple;
+}
+
+#lecture7 a{
+	color: lightseagreen;
+}
+
+#lecture8 a{
+	color: sienna;
+}
+
+#lecture9 a{
+	color: cornflowerblue;
+}
+
+#lecture10 a{
+	color: darkkhaki;
+}
+
+#lecture11 a{
+	color: mediumpurple;
+}
+
+#next_tab a{
+	color: midnightblue;
+}
+
+/* Project Lecture Page */
+
+#header_lecture {
+	background-color: silver;
+	color: black;
+	text-align: center;
+	padding: 1%;
+	border-radius: 15px;
+	border: 2px solid olivedrab;
+}
+
+#accordion {
+	background-color: wheat;
+	padding: 2%;
+	border-radius: 15px;
+	border: 2px solid mediumpurple;
+}
+
+#topic1 {
+	background-color: darkcyan;
+	color: white;
+	padding: 2px;
+	margin: 4px;
+	border-radius: 15px;
+	border: 2px solid mediumpurple;
+	text-align: center;
+}
+
+#topic2 {
+	background-color: coral;
+	color: white;
+	padding: 2px;
+	margin: 4px;
+	border-radius: 15px;
+	border: 2px solid mediumpurple;
+	text-align: center;
+}
+
+#topic3 {
+	background-color: olivedrab;
+	color: white;
+	padding: 2px;
+	margin: 4px;
+	border-radius: 15px;
+	border: 2px solid mediumpurple;
+	text-align: center;
+}
+
+#topic4 {
+	background-color: lightcoral;
+	color: white;
+	padding: 2px;
+	margin: 4px;
+	border-radius: 15px;
+	border: 2px solid mediumpurple;
+	text-align: center;
+}
+
+#topic5 {
+	background-color: goldenrod;
+	color: white;
+	padding: 2px;
+	margin: 4px;
+	border-radius: 15px;
+	border: 2px solid mediumpurple;
+	text-align: center;
+}
+
+#resource_title {
+	background-color: silver;
+	color: black;
+	padding: 10px;
+	margin: 4px;
+	border-radius: 15px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+#resource_title a:link {
+	text-decoration: none;
+}
+
+#resource_title a:hover {
+	color: sienna;
+}
+
+/* Project Resource Page */
+
+#header_resource {
+	background-color: silver;
+	color: black;
+	text-align: center;
+	padding: 1%;
+	border-radius: 15px;
+	border: 2px solid olivedrab;
+}
+
+#resource a:link{
+	text-decoration: none;
+}
+
+#resource a:hover{
+	text-decoration: none;
+	color: darksalmon;
+}
+
+#download {
+	width: 90%;
+	height: auto;
+	padding: 2%;
+	background-color: darkkhaki;
+	border: 2px solid blueviolet;
+	display: block;
+	margin: auto;
+	font-size: 20pt;
+}
+
+#links {
+	width: 90%;
+	height: auto;
+	padding: 2%;
+	background-color: tan;
+	border: 2px solid sienna;
+	display: block;
+	margin: auto;
+	font-size: 20pt;
+}
+
+#resource {
+	width: auto;
+	height: auto;
+	padding: 3%;
+	border:2px solid lightpink;
+	background-color: papayawhip;
+}
+
+
+/* Project What's Next Page */
+
+#header_next {
+	background-color: goldenrod;
+	color: mediumpurple;
+	text-align: center;
+	padding: 1%;
+	border-radius: 15px;
+	border: 2px solid olivedrab;
+}
+
+#next li {
+	padding: 1%;
+}
+
+#next a:link{
+	text-decoration: none;
+	padding: 1%;
+}
+
+#next a:hover{
+	text-decoration: none;
+	color: darksalmon;
+}
+
+#ProspectiveCourses {
+	width: 90%;
+	height: auto;
+	padding: 2%;
+	background-color: lightgrey;
+	border: 2px solid blueviolet;
+	display: block;
+	margin: auto;
+	font-size: 20pt;
+}
+
+#programs {
+	width: 90%;
+	height: auto;
+	padding: 2%;
+	background-color: wheat;
+	border: 2px solid sienna;
+	display: block;
+	margin: auto;
+	font-size: 20pt;
+}
+
+#next {
+	width: auto;
+	height: auto;
+	padding: 3%;
+	border:2px solid lightpink;
+	background-color: papayawhip;
+}
+
+#pc_title {
+	text-align: center;
+	color: cadetblue;
+}
+
+#programs_title {
+	text-align: center;
+	color: lightcoral;
+}

@@ -1,0 +1,123 @@
+/* COMP1950 Homework #2 Stylesheet */
+
+/* Brian Liao */
+
+/* Page Background Color */
+body{
+	background-color: white;
+}
+
+/*Page Title */
+h1 {
+	position: relative;
+	font: bold 44pt verdana;
+	border: 2px solid #616161;
+	padding: 2%;
+	margin: 0;
+	background-color: #A1BDDD;
+	color: #616161;
+	text-align: center;
+}
+
+/* Article Titles */
+h2 {
+	position: relative;
+	font: bold 34pt verdana;
+	border: 2px solid #616161;
+	padding: 2%;
+	margin: auto;
+	margin-top: 2%;
+	width: 70%;
+	background-color: #C5D2E2;
+	color: #707070;
+	text-align: center;
+}
+
+/* HTML5 Elements Title */
+h4 {
+	position: relative;
+	font: bold 28pt verdana;
+	margin-top: 2%;
+	color: #9FBCDB;
+}
+
+/* Horizontal Navigation Pane */
+ul {
+    position:relative;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4794ED;
+}
+
+ul li {
+    float: left;
+	font-size: 26px;
+	
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 26px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #003366;
+}
+
+/* Quotes at top */
+aside {
+	padding: 2%;
+	margin: 3%;
+	border: 5px solid #D2C29E;
+	font: normal 26pt verdana;
+	text-align: center;
+	background-color: #F7EEDA;
+	color: black;
+}
+
+/* Paragraphs */
+article {
+	padding: 2%;
+	margin: 2%;
+	border: 5px solid #D2C29E;
+	font: normal 22pt verdana;
+	text-align: left;
+	background-color: #F0F7D4;
+	color: black;
+}
+
+
+/*Images and Figures */
+
+img {
+	width: 200px;
+	height: 180px;
+
+}
+
+figure {
+	margin: auto;
+	padding: 1%;
+	text-align: center;
+	float: right;
+}
+
+figcaption {
+	font: normal 16pt verdana;
+	color: black;
+}
+
+table, th, td {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+th {
+	font: bold 22pt verdana;
+}
+	

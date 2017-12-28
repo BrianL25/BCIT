@@ -1,0 +1,168 @@
+/* Brian Liao */
+
+/*Stylesheet for Homework #4 */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+#container {
+	background-color: #cdc;
+}
+
+/* Page Title */
+header {
+	background-color: #eee;
+	padding: 10px 0px 10px 10px;
+	font: bold 26pt verdana;
+	color: #778899;
+}
+
+/* main content */
+main{
+	margin: 0 0 0 25%;
+	padding: 15px;
+	background-color: #FAEBD7;
+	min-height: 470px;
+}
+
+main h1{
+	margin: 0px;
+	padding-bottom: 10px;
+	font: bold 20pt verdana;
+	color: #FF7F50;
+}
+
+main h2{
+	margin: 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font: bold 18pt verdana;
+	color: #FFA07A;
+}
+
+main p{
+	font: normal 16pt verdana;
+	padding: 10px 0px 10px 0px;
+}
+
+main a{
+	font: normal 16pt verdana;
+}
+
+/* hyperlink pseudoclasses */
+
+main a:link{
+	color: blue;
+}
+
+main a:hover{
+	color: green;
+}
+
+main a:active{
+	color: purple;
+}
+
+main a:visited{
+	color: red;
+}
+
+
+/* Navigation List (vertical) */
+nav{
+	float: left;
+	margin: 0%;
+	padding: 0%;
+	width: 25%;
+	background-color: #cdc;
+	min-height: 500px;
+}
+
+nav h1{
+	padding: 10px;
+	margin: 0px;
+	font: bold 20pt verdana;
+	color: #556B2F;
+}
+
+nav ul{
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20pt;
+}
+
+nav a{
+	box-sizing: border-box;
+	display: block;
+	padding: 3px;
+	width: 100%;
+	background-color: #5F9EA0;
+	border-bottom: 1px solid #eee;
+}
+
+/* Navigation pseudoclasses */
+nav a:link{
+	color: #EEE;
+	text-decoration: none;
+}
+
+nav a:hover{
+	background-color: #A9A9A9;
+	text-decoration: none;
+}
+
+/* sprites */
+nav figure{
+	text-align: center;
+	margin: 5px;
+	margin-top: 20px;
+}
+
+footer{
+	clear: both;
+	background-color: #666;
+	background-color: #ccd;
+}
+
+/* validator */
+aside{
+	clear: both;
+	text-align: center;
+	font: normal 18pt verdana;
+	background-color: #FAF0E6;
+}
+
+aside a:link{
+	color: blue;
+}
+
+aside a:hover{
+	color: green;
+}
+
+aside a:active{
+	color: purple;
+}
+
+aside a:visited{
+	color: red;
+}
+
+
+
+/* footer text*/
+footer h3{
+	padding: 2px;
+	font: normal 16pt verdana;
+	text-align: center;
+}
+
+
+
+
+
