@@ -1,0 +1,40 @@
+
+#header {
+	position:relative;
+	left:35%;
+	top:10px;
+	font:bold 28pt verdana;
+	border:5px solid #ff884d;
+	width:30%;
+	background-color:#ffbb99;
+	color:#e64d00;
+	text-align: center;
+}
+
+
+#body1 {
+	padding:10px;
+	margin-bottom:60px;
+	position:relative;
+	left:25%;
+	top:100px;
+	font:normal 16pt verdana;
+	width:48%;
+	background-color: #e0e2e4;
+	border: 5px solid #c2d4dd;
+	text-align: left;
+}
+
+#body2 {
+	padding:10px;
+	margin-bottom:60px;
+	position:relative;
+	left:25%;
+	top:150px;
+	font:normal 16pt verdana;
+	width:48%;
+	min-height:60px;
+	background-color: #e0e2e4;
+	border: 5px solid #c2d4dd;
+	text-align: left;
+}

@@ -1,0 +1,107 @@
+
+
+/* main header specification*/
+#header {
+	position:relative;
+	left:25%;
+	top:5%;
+	font:bold 24pt verdana;
+	border:2px solid #625750;
+	width:50%;
+	padding:0%;
+	background-color:#bbab9b;
+	color:#7e4a35;
+	text-align: center;
+}
+
+#subheader1 {
+   position:relative;
+   padding:0%;
+   left:35%;
+   top:15%;
+   font:bold 18pt verdana;
+   border:2px solid gray;
+   width:30%;
+   background-color:#b2c2bf;
+   color:#162955;
+   text-align: center;
+   
+}
+
+#body1 {
+	padding:1%;
+	margin-bottom:60px;
+	position:relative;
+	left:25%;
+	top:18%;
+	font:normal 14pt verdana;
+	width:48%;
+	min-height: 60px;
+	background-color: #e0e2e4;
+	border: 2px solid #c2d4dd;
+	text-align: center;
+}
+
+
+#subheader2 {
+   position:relative;
+   padding:0%;
+   left:35%;
+   top:26%;
+   width:30%;
+   font:bold 18pt verdana;
+   border:2px solid gray;
+   background-color:#b2c2bf;
+   color:#162955;
+   text-align: center;
+}
+
+#body2 {
+	padding:1%;
+	margin-bottom:60px;
+	position:relative;
+	left:25%;
+	top:29%;
+	font:normal 14pt verdana;
+	width:48%;
+	min-height:60px;
+	background-color: #e0e2e4;
+	border: 2px solid #c2d4dd;
+	text-align: left;
+}
+
+#body3 {
+	padding:1%;
+	margin-bottom:60px;
+	position:relative;
+	left:25%;
+	top:40%;
+	font:normal 14pt verdana;
+	width:48%;
+	min-height:60px;
+	background-color: #e0e2e4;
+	border: 2px solid #c2d4dd;
+	text-align: left;
+}
+
+/*psuedoclasses*/
+/* unvisited link */
+a:link {
+    color: #2E2EFE;
+}
+
+/* visited link */
+a:visited {
+    color: #6A0888;
+}
+
+/* mouse over link */
+a:hover {
+    color: #086A87;
+}
+
+/* while clicking link */
+a:active {
+    color: #585858;
+}
+

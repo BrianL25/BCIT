@@ -1,0 +1,47 @@
+h1 {font: bold 36pt verdana;}
+h1 {color: #585858;}
+
+h2 {font: bold 28pt verdana;}
+h2 {color: #5761A4;}
+
+h3 {font: bold 22pt verdana;}
+
+h4 {font: bold 18pt verdana;}
+
+p {font: normal 14pt verdana;}
+
+ul {font: bold 18pt verdana;}
+
+ol {font: bold 18pt verdana;}
+
+/* unvisited link */
+a:link {
+    color: #2E2EFE;
+}
+
+/* visited link */
+a:visited {
+    color: #6A0888;
+}
+
+/* mouse over link */
+a:hover {
+    color: #086A87;
+}
+
+/* while clicking link */
+a:active {
+    color: #585858;
+}
+
+/* Class for scrollbars */
+.auto{
+	display:block;
+    border: 2px solid blue;
+    padding:10px;
+    margin-top:10px;
+    width:300px;
+    height:70px;
+    overflow:auto;
+		
+}

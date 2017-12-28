@@ -1,0 +1,113 @@
+
+/* Pseudoclasses */
+/* unvisited link */
+a:link {
+    color: #2E2EFE;
+}
+
+/* visited link */
+a:visited {
+    color: #6A0888;
+}
+
+/* mouse over link */
+a:hover {
+    color: #086A87;
+}
+
+/* while clicking link */
+a:active {
+    color: #585858;
+}
+
+
+
+/* Navigation Panel */
+#navigation {
+		position: relative;
+		left:20px;
+		top:80px;
+		font:bold 24pt verdana;
+		width:450px;
+		height:250px;
+		background-color: #CEC9F0;
+		border: 5px solid #8080ff;			
+}
+
+ul {
+	list-style-type: none;
+	margin: 5;
+	padding: 10;
+}
+
+li a {
+	display: block;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+html{
+	height:100%
+}
+
+
+/* Header */
+#header {
+	position:relative;
+	left:20px;
+	top:20px;
+	font:bold 28pt verdana;
+	border:5px solid gray;
+	width:800px;
+	height:140px;
+	padding:10px;
+	padding-top:0px;
+	margin:0px;
+	background-color:#CBD1D5;
+	color:#687985;
+}
+
+.body {
+   padding:5px;
+   position:relative;
+   width:95%;
+   height:100%;
+   
+}
+
+.content {
+	padding:10px;
+	margin-bottom:60px;
+	position:relative;
+	left:20px;
+	top:150px;
+	font:normal 14pt verdana;
+	width:100%;
+	min-height: 250px;
+	background-color: #eeccff;
+	border: 2px solid #a3297a;	
+}
+	
+
+/* Footer */
+#footer {
+	position:fixed;
+	width:100%;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height:45px;   /* Height of the footer */
+	background:#CBD1D5;
+	font:bold 14pt verdana;
+	border: 3px solid gray;
+	text-align:center;
+}
+
+/*Image placement*/
+#badge {
+
+	position: absolute;
+	left: 800px;
+	top: 250px;
+}
+

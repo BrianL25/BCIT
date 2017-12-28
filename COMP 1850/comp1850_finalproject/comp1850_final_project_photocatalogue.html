@@ -1,0 +1,114 @@
+<! DOCTYPE html>
+<!-- Brian Liao -->
+
+<html>
+
+	<head>
+	
+		<title>Photos</title>
+		<link rel="stylesheet" type="text/css" href="comp1850_final_project_stylesheet.css">
+	
+	</head>
+
+	<body id="grid_body">
+	
+		<h1>Photo Collection</h1>
+
+		<ul>
+				
+			<li><a href="comp1850_final_project_homepage.html">Home</a></li>
+			<li><a href="comp1850_final_project_aboutus.html">About Us</a></li>
+			<li><a href="comp1850_final_project_populardestinations.html">Popular Destinations</a></li>
+			<li><a href="comp1850_final_project_countries.html">Countries</a></li>
+			<li><a href="comp1850_final_project_photocatalogue.html">Photo Collection</a></li>
+			<li><a href="comp1850_final_project_news.html">News</a></li>
+			<li><a href="comp1850_final_project_contactus.html">Contact Us</a></li>
+
+		</ul>
+		
+		<!-- Header -->
+		<div class="header">
+			<p>Click on the buttons to change the grid view.</p>
+			<button onclick="four()">4</button>
+			<button onclick="two()">2</button>
+			<button onclick="one()">1</button>
+		</div>
+
+		
+		<div class="row"> 
+		
+			<div class="column">
+				<img src="hoi_an1.jpg" alt="Hoi An 1" style="width: 100%">
+				<img src="hoi_an2.jpg" alt="Hoi An 2" style="width: 100%">
+				<img src="hoi_an3.jpg" alt="Hoi An 3" style="width: 100%">
+				<img src="hue_imperial_palace_gate.jpg" alt="Hue Palace Gates" style="width: 100%">
+				<img src="Ifugao1.jpg" alt="Ifugao 1" style="width: 100%">
+				<img src="Ifugao2.jpg" alt="Ifugao 2" style="width: 100%">
+				<img src="Ifugao3.jpg" alt="Ifugao 3" style="width: 100%">
+			</div>
+  
+			<div class="column">
+				<img src="kuan_yin_temple_Penang.jpg" alt="Kuan Yin Temple" style="width: 100%">
+				<img src="malaysia.jpg" alt="Malaysia" style="width: 100%">
+				<img src="petronas_twin_towers.jpg" alt="Petronas 1" style="width: 100%">
+				<img src="mu_cang_chai_road_Hanoi.jpg" alt="Hanoi Road" style="width: 100%">
+				<img src="rice_terraces_Banaue_philippines.jpg" alt="Rice Terrace" style="width: 100%">
+			</div> 
+			
+			<div class="column">
+				<img src="wat_po1.jpg" alt="Wat Po 1" style="width: 100%">
+				<img src="wat_po3.jpg" alt="Wat Po 3" style="width: 100%">
+				<img src="ayuthaya.jpg" alt="Ayuthaya" style="width: 100%">
+				<img src="thailand1.jpg" alt="Thailand 1" style="width: 100%">
+				<img src="Philippines1.jpg" alt="Philippines 1" style="width: 100%">
+				<img src="thailand2.jpg" alt="Thailand 1" style="width: 100%">
+			</div>
+			
+			<div class="column">
+				<img src="terraces_Mayoyao_Banaue_Philippines.jpg" alt="Rice Terrace 2" style="width: 100%">
+				<img src="Thailand_scenery_on_Ko_Phi_Phi.jpg" alt="Thailand" style="width: 100%">
+				<img src="wat_arun.jpg" alt="Wat Arun" style="width: 100%">
+				<img src="wat_arun1.jpg" alt="Wat Arun 1" style="width: 100%">
+				<img src="wat_arun2.jpg" alt="Wat Arun 2" style="width: 100%">
+				<img src="wat_arun3.jpg" alt="Wat Arun 3" style="width: 100%">
+				<img src="wat_pho2.jpg" alt="Wat Po 2" style="width: 100%">
+			</div>
+			
+		
+		</div>
+		
+		<script>
+		
+			<!-- Four images side by side -->
+			function four() {
+				var elements = document.getElementsByClassName("column");
+				var i;
+				for (i = 0; i < elements.length; i++) {
+				elements[i].style.width = "25%";
+				}
+			}
+
+			<!-- Two images side by side -->
+			function two() {
+				var elements = document.getElementsByClassName("column");
+				var i;
+				for (i = 0; i < elements.length; i++) {
+				elements[i].style.width = "50%";
+				}
+			}
+
+			<!-- Full-width images -->
+			function one() {
+				var elements = document.getElementsByClassName("column");
+				var i;
+				for (i = 0; i < elements.length; i++) {
+				elements[i].style.width = "100%";
+				}
+			}
+		
+		</script>
+
+	
+	</body>
+
+</html>

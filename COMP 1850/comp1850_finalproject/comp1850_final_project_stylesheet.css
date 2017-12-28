@@ -1,0 +1,243 @@
+/* Brian Liao */
+
+/* Page Background Color */
+body{
+	background-color: #DBE8F9;
+}
+
+/*Page Title */
+h1 {
+	position: relative;
+	font: bold 44pt verdana;
+	border: 2px solid #003366;
+	padding: 2%;
+	margin: 0;
+	background-color: #FFCC99;
+	color: #FF9966;
+	text-align: center;
+}
+	
+
+/* Horizontal Navigation Pane */
+
+ul {
+    position:relative;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3399FF;
+}
+
+li {
+    float: left;
+	font-size: 26px;
+	
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 26px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #003366;
+}
+
+/* Sitemap */
+#sitemap{
+	float: center;
+	font-size: 22px;
+}
+
+/* Homepage Introductory paragraph */
+
+#intro{
+	padding: 2%;
+	margin: 2%;
+	border: 5px solid #dbbe11;
+	font: normal 26pt verdana;
+	text-align: center;
+	background-color: #f2f0db;
+	color: #a95012;
+}
+
+/* Home page second paragraph */
+
+.normal_p{
+	padding: 2%;
+	margin: 2%;
+	border: 5px solid #dbbe11;
+	font: normal 26pt verdana;
+	text-align: left;
+	background-color: #f2f0db;
+	color: #a95012;
+}
+
+#author_p{
+	padding: 2%;
+	margin: 2%;
+	width: 40%;
+	border: 5px solid #dbbe11;
+	font: normal 26pt verdana;
+	text-align: left;
+	background-color: #f2f0db;
+	color: #a95012;
+}
+
+/* Portrait of Brian */
+
+#portrait{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+}
+
+/* contact email */
+#email{
+	color: blue;
+}
+
+/*psuedoclasses*/
+/* unvisited link */
+
+p a:link {
+	color: #2E2EFE;
+}
+
+/* visited link */
+p a:visited {
+    color: #6A0888;
+}
+
+/* mouse over link */
+p a:hover {
+    color: #086A87;
+}
+
+/* while clicking link */
+p a:active {
+    color: #585858;
+}
+
+.news_p{
+	padding: 2%;
+	margin: 2%;
+	border: 5px solid #4B6177;
+	font: normal 26pt verdana;
+	text-align: left;
+	background-color: #88B9D7;
+	color: black;
+}
+
+/* Countries table */
+table{
+	font-family: arial, sans-serif;
+	font-size: 20px;
+	border: 3px solid #7782CF;
+	border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #78BBE4;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #C3E4F7;
+}
+
+tr:nth-child(odd) {
+    background-color: #F6E1F7;
+}
+
+/* Countries Highlight*/ 
+#Thailand{
+	font: bold 38pt verdana;
+	color: #53B14C;
+}
+
+#Vietnam{
+	font: bold 38pt verdana;
+	color: #BD4D2E;
+}
+
+#Malaysia{
+	font: bold 38pt verdana;
+	color: #3F75DC;
+}
+
+#Philippines{
+	font: bold 38pt verdana;
+	color: #CF9E3C;
+}
+
+/* image caption */
+.cap{
+	font: normal 20pt verdana;
+	color: #B69870;
+}
+
+#first_site{
+	font: bold 38pt verdana;
+	color: #B10B21;
+}
+
+#second_site{
+	font: bold 38pt verdana;
+	color: #2233D1;
+}
+
+#third_site{
+	font: bold 38pt verdana;
+	color: #1C7F05;
+}
+
+#fourth_site{
+	font: bold 38pt verdana;
+	color: #C6A118;
+}
+
+#fifth_site{
+	font: bold 38pt verdana;
+	color: #AD1774;
+}
+
+/*Photo Grid */
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#grid_body {
+    margin: 0;
+    font-family: Arial;
+}
+
