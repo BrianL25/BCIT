@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Brian Liao -->
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>COMP2015 Lab4</title>
+		
+		<link rel="stylesheet" id="default_theme" href="css/style1.css"> 
+
+        <script src="jquery-3.2.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="jquery.jeditable.js"></script>
+		<script src="jquery.corner.js"></script>
+
+
+        <script>
+
+            $(document).ready(function() {
+                $("#accordion").accordion({
+                    heightStyle: "content",
+                    collapsible: true
+                });
+
+                $(".datepicker").datepicker({
+                    showOtherMonths: true,
+                    selectOtherMonths: true
+                });
+				
+				$('#dark').click(function (){
+					$("link[rel=stylesheet]").attr({href: "css/style2.css"});
+				});
+						
+				$('#original').click(function (){
+					$('link[rel=stylesheet]').attr({href: "css/style1.css"});
+				});
+				
+				$('#gray').click(function (){
+					$('link[rel=stylesheet]').attr({href: "css/style3.css"});
+				});
+				
+				$('.edit').editable('comp2015_lab4_brianliao.html');
+				
+				$('#corner1').corner("round");
+				$('#corner1').css('background-color', '#ADD8E6')
+				$('#corner1').css('padding', '4px')
+				$('#corner1').css('margin', '5px')
+				
+				$('#corner2').corner("wicked");
+				$('#corner2').css('background-color', '#9ACD32')
+				$('#corner2').css('padding', '4px')
+				$('#corner2').css('margin', '5px')
+				
+				$( document ).tooltip();
+            } );
+			
+
+
+        </script>
+
+    </head>
+
+    <body>
+		
+        <h1>COMP2015 Lab #4</h1>
+
+        <h2>Part 1 - Accordion</h2>
+
+        <div id="accordion">
+            <h3>Part 2 - Date Picker</h3>
+            <div>
+                <h4>Trip Detail</h4>
+
+                <p>Departure Date: <input type="text" class="datepicker"></p>
+
+                <p>Return Date: <input type="text" class="datepicker"></p>
+            </div>
+
+            <h3>Part 3 - CSS Style Switch</h3>
+			
+            <div>
+				
+				<ul>
+					<li><a id="original" href="#default_theme">Original</a></li>
+					<li><a id="dark" href="#dark_theme">Dark</a></li>
+					<li><a id="gray" href="#gray_theme">Gray</a></li>
+				</ul>
+
+            </div>
+			
+            <h3>Part 4 - Jeditable</h3>
+			
+            <div class="edit">
+			
+                <p>
+                    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                </p>
+				
+            </div>
+			
+            <h3>Part 5 - Corner</h3>
+			<div>
+			
+            <div id="corner1">
+                <p>
+                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                    mauris vel est.
+                </p>
+                <p>
+                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos.
+                </p>
+            </div>
+			
+			<div id="corner2">
+                <p>
+                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                    mauris vel est.
+                </p>
+                <p>
+                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos.
+                </p>
+            </div>
+			
+			</div>
+			
+            <h3>Part 6 - Jtip/Tooltip</h3>
+			
+			<div>
+				<p><strong>Mathematics</strong> is the study of <a href="#" title="An object is anything that has been (or could be) formally defined">objects</a> 
+				and their relations. Objects can be <a href="#" title="A property that can exist as a multitude or magnitude">quantity</a>, 
+				<a href="#" title="A structure consists of a set along with a collection of finitary operations and relations that are defined on it.">structure</a>
+				, <a href="#" title="Boundless three-dimensional extent in which objects and events have relative position and direction.">space</a>, 
+				and <a href="#" title="A changing quantity has two aspects. One is its value at a particular time, the other is its rate of change at that particular time.">change</a>.
+				Mathematicians seek out patterns and use them to formulate new <a href="#" title=" a conjecture is a conclusion or proposition based on incomplete information, 
+				for which no proof has been found.">conjectures</a>. Mathematicians resolve the truth or falsity of conjectures by mathematical proof. 
+				One of the ultimate goals of mathematics is to model real phenomena that occurs in nature. 
+				Mathematical reasoning can provide insight or predictions about nature, change, and even 
+				human behavior.</p>
+			</div>
+			
+        </div>
+
+    </body>
+
+</html>

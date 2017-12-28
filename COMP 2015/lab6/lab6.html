@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- Brian Liao -->
+
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Document</title>
+
+        <script src="User.js"></script>
+        <script src="MessageBoard.js"></script>
+        <script src="Message.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+        <style>
+
+            html, body {
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                font-family: Arial;
+                font-size: 130%;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            #sidebar {
+                width: 30%;
+                height: 100%;
+                float: left;
+                background: black;
+                color: white;
+                padding: 15px;
+            }
+            main {
+                width: 64%;
+                height: 100%;
+                float: left;
+                padding: 15px;
+            }
+            #message-entry {
+                width: 70%;
+                height: 40px;
+                border: 2px solid black;
+                font-size: 1em;
+                padding-left: 0.8em;
+            }
+            .message {
+                width: 100%;
+                clear: both;
+            }
+            .message p.user {
+                font-size: 0.5em;
+                display: block;
+                margin-bottom: 2px;
+            }
+            .message p.content {
+                padding: 20px;
+                margin-bottom: 20px;
+                margin-top: 0;
+                border-radius: 6px;
+                display: inline-block;
+                background: #ddd;
+                border-radius: 5px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="sidebar">
+            <button onclick="createUser()">Click to join the message board</button>
+            <h1>Current Users</h1>
+            <ul id="userlist">
+
+            </ul>
+        </div>
+
+        <main>
+            <div id="entry">
+                <input type="text" id="message-entry">
+                <select name="chooseUser" id="user-chooser"></select>
+                <button onclick="createMessage()">Submit</button>
+            </div>
+            <div id="messages">
+
+            </div>
+        </main>
+
+        <script>
+
+            var messageBoard = new MessageBoard();
+
+            function createUser() {
+                var name = prompt('Please choose a username');
+                var user = new User(name);
+                updateUserList(user);
+                alert(user.username + ' has been created');
+            }
+
+            function updateUserList(user) {
+                messageBoard.addUser(user);
+
+                $('#userlist').text("");
+                $('#user-chooser').text("");
+
+                var userList = messageBoard.listUsers();
+
+                for (let i = 0; i < userList.length; i++) {
+                    $('#userlist').append('<li>' + userList[i].username + '</li>');
+                    $('#user-chooser').append('<option value="' + userList[i].username + '">' + userList[i].username + '</option>');
+                }
+            }
+
+            function createMessage() {
+                var name = $('#user-chooser').find(":selected").text();
+                if (name == "") {
+                    event.preventDefault();
+                    alert('Please choose a user before posting');
+                    return;
+                }
+
+                var user = messageBoard.findUser(name);
+                if (user != null) {
+                    var message = new Message(user, $('#message-entry').val());
+                    messageBoard.addMessage(message);
+                    updateMessageList();
+                }
+            }
+
+            function updateMessageList() {
+                $('#messages').text("");
+                var messageList = messageBoard.listMessages();
+                for (let i = 0; i < messageList.length; i++) {
+                    $('#messages').append('<div class="message"><p class="user">' + messageList[i].user.username + ' says:</p>' + '<p class="content">' + messageList[i].content + '</p></div>');
+                }
+            }
+
+        </script>
+
+    </body>
+</html>

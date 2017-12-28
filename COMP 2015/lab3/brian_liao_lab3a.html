@@ -1,0 +1,100 @@
+<html>
+
+<head>
+	<title>COMP2015 Lab3a</title>
+	<meta char="utf-8">
+	
+	<script>
+
+		window.onload=function(){
+			for(let i = 0; i < document.images.length; i++){
+				document.images[i].onclick=function(){
+					this.style.border='5px solid red'
+				}
+			}
+			
+			var div1images = document.getElementById("div1").getElementsByTagName("img");
+			for(let i = 0; i < div1images.length; i++){
+				div1images[i].onmouseover=function(){
+					this.style.width='100px'
+				}
+			}
+			
+			var paragraphs = document.getElementsByTagName("p");
+			
+			for(let i = 0; i < paragraphs.length; i++){
+				paragraphs[i].ondblclick=function(){
+					this.style.color='blue'
+				}
+			}
+			
+			var div3paragraphs = document.getElementById("div3").getElementsByTagName("p");
+			
+			for(let i = 0; i < div3paragraphs.length; i++){
+				div3paragraphs[i].onmouseover=function(){
+					this.style.backgroundColor='yellow'
+				}
+			}
+		}
+
+		
+	</script>
+</head>
+
+<body>
+	<div id="div1">
+		<img src="cat.jpg" id="im1">
+		<img src="dog.jpg" id="im2">
+		<img src="fish.jpg" id="im3">
+	</div>
+	
+	<div id="div2">
+		<p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis lacinia ligula 
+		in venenatis. Vestibulum vestibulum mauris purus, sed consequat ipsum vulputate quis. Pellentesque 
+		aliquet purus et erat euismod elementum at aliquam leo. Sed feugiat quam turpis, a elementum sapien 
+		gravida ac. Pellentesque mattis libero in diam rhoncus, vitae mattis felis hendrerit. Ut pellentesque 
+		lectus diam, id aliquet est tempor sit amet. Vivamus laoreet felis in ligula luctus, in feugiat nulla 
+		rhoncus. Donec in luctus nisl. Morbi quis nisl et turpis mattis convallis nec sit amet ligula. 
+		Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam 
+		venenatis vestibulum turpis, consectetur blandit odio vulputate faucibus. Curabitur tincidunt 
+		condimentum neque eu fringilla. Morbi ac tristique dolor.</p>
+		
+		<p id="p2">Praesent nec urna id leo maximus viverra sed sit amet risus. Sed sodales nunc et ex 
+		congue condimentum. Maecenas interdum odio tristique feugiat scelerisque. Etiam ut lectus nunc.
+		Nam tincidunt vitae nulla et convallis. Morbi molestie eros et elit laoreet gravida at in quam. 
+		Vivamus efficitur accumsan velit, at ornare augue ullamcorper eget. Donec ac massa quis tortor 
+		accumsan laoreet. Sed luctus tristique tortor vel fringilla.</p>
+		
+		<p id="p3">In libero urna, dictum et egestas ut, scelerisque in turpis. Aenean ultrices, nisi 
+		molestie tempor interdum, libero libero iaculis urna, eget cursus turpis odio quis ipsum. Donec 
+		venenatis, urna nec gravida porta, ligula neque fermentum neque, vitae imperdiet sem odio mattis 
+		magna. Donec sed venenatis nunc. Nullam rutrum finibus leo non facilisis. Vestibulum quis sodales 
+		nibh. Nam sed vehicula massa. Ut non maximus ante. Ut purus nunc, ultricies a diam quis, convallis 
+		venenatis ante. Aliquam non luctus justo, non tempus nulla. Sed ligula lacus, semper sit amet odio 
+		convallis, condimentum consequat est.</p>
+	</div>
+	
+	<div id="div3">
+		<p id="p4">Sed ornare ligula cursus, pulvinar neque non, dictum odio. Nullam felis arcu, congue ut 
+		ornare vel, mollis nec est. Fusce non posuere metus. Nulla elementum dolor lacus, nec iaculis ex 
+		accumsan et. Donec congue nisl ac dolor tempor dictum non vel lorem. Phasellus sodales nisl eget 
+		nulla condimentum vehicula sit amet sit amet neque. Sed placerat viverra dui maximus venenatis. 
+		Duis placerat vel eros eget lobortis.</p>
+		
+		<p id="p5">Etiam non fringilla magna. Fusce consectetur ipsum in nulla finibus, at hendrerit lorem 
+		molestie. Etiam tempus turpis in venenatis vestibulum. In lacinia, neque id gravida pharetra, justo 
+		tellus suscipit justo, et tincidunt orci mauris in ante. Mauris fermentum est eu odio laoreet, 
+		vitae porta purus ultrices. Maecenas auctor ac ex sed gravida. Fusce commodo elit in massa suscipit,
+		sed venenatis est semper. Mauris at sapien venenatis, convallis libero quis, tempor magna. Donec 
+		orci lacus, faucibus vel quam blandit, posuere bibendum mauris. Nullam fermentum, enim vitae 
+		dignissim consequat, nibh mauris lacinia massa, eu rutrum tellus augue vel ex. Praesent finibus 
+		orci enim, at ornare dui tempus at. Proin tincidunt nibh velit, id eleifend mauris venenatis id. 
+		Duis scelerisque nec felis non congue.</p>
+		
+		<img src="bird.jpg" id="im4">
+		<img src="turtle.jpg" id="im5">
+	</div>
+	
+</body>
+
+</html>

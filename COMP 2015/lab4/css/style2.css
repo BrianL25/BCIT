@@ -1,0 +1,78 @@
+body {
+	background-color: #191970;
+}
+
+h1 {
+	position: relative;
+	font-style: Bold;
+	font-size: 38px;
+	margin: auto;
+	padding: 15px;
+	text-align: center;
+	background-color: #4169E1;
+	color: white;
+}	
+
+h2 {
+	position: relative;
+	font-style: Bold;
+	font-size: 30px;
+	margin: auto;
+	padding: 10px;
+	text-align: left;
+	background-color: #DEB887;
+}	
+
+h3 {
+	position: relative;
+	font-style: Bold;
+	font-size: 26px;
+	margin: auto;
+	padding: 10px;
+	text-align: left;
+	background-color: black;
+	color: white;
+	border: 2px solid black;
+}
+
+p{
+	color: white;
+}
+
+h4 {
+	color: white;
+}
+
+a: link {
+	color: white;
+}
+
+a: hover {
+	color: red;
+}
+
+a: visited {
+	color: green;
+}
+
+ul {
+	color: white;
+}
+
+#corner1 p, #corner2 p {
+	color: black;
+}
+
+
+.ui-tooltip, .arrow:after {
+    background: white;
+    border: 2px solid black;
+}
+.ui-tooltip {
+    padding: 10px 20px;
+    color: black;
+    border-radius: 20px;
+    font: bold 14px "Helvetica Neue", Sans-Serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 7px black;
+}

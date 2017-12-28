@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+
+now  = new Date() // current date and time
+xmas = new Date(2017, 11, 25, 6, 30, 0)
+
+msec = xmas - now
+
+sec  = msec / 1000
+min  = sec  / 60
+hour = min  / 60
+day  = hour / 24
+
+alert(day.toFixed(1))
+alert(Math.round(day) + " days til xmas")
+
+
+</script>
+</head>
+<body>
+</body>
+</html>
